@@ -1,4 +1,7 @@
 <?php
+/**
+ * This calls notify-send to display a notice for the user.
+ */
 namespace SystemNotifier\Notifiers;
 
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'NotifierBase.php';
