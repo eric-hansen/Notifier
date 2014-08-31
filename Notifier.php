@@ -12,12 +12,16 @@ class Notifier {
 
         $notifier = null;
 
-        // Only do something if the class file exists
-        if(file_exists($file)){
-            include_once $file;
+        // Load the notifier and create a new class instance
+        $notif_class = __NAMESPACE__ . "\\Notifiers\\" . $method;
 
-            // Load the notifier and create a new class instance
-            $notif_class = __NAMESPACE__ . "\\Notifiers\\" . $method;
+        // Only load the file if it exists but the class doesn't exist
+        if(!class_exists($notif_class) && file_exists($file)) {
+            require $file;
+        }
+
+        // If the class is loaded, create a new instance and run it
+        if(class_exists($notif_class)){
             $notifier = new $notif_class($args);
 
             $notifier->run();
