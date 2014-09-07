@@ -1,5 +1,5 @@
 {
-    "name": "eric-hansen/php-notifiers",
+    "name": "eric-hansen/notifier",
     "type": "library",
     "description": "System notifier for PHP scripts inteded for CLI on desktops",
     "keywords": ["notification", "notifications", "cli", "desktop"],
