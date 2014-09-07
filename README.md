@@ -14,9 +14,9 @@ Mainly because I was bored, and I wanted to better grasp some of the OOP and adv
 
 ## How To Extend
 
-The ```src/EricHansen/SystemNotifier/notifiers/Notify.php``` file gives a good example of what's involved.  All that needs to be done really is:
+The ```src/EricHansen/Notifier/notifiers/Notify.php``` file gives a good example of what's involved.  All that needs to be done really is:
 
-* Extend the \EricHansen\SystemNotifier\NotiferBase abstract class
+* Extend the \EricHansen\Notifier\NotiferBase abstract class
 * Handle the arguments passed in __construct()
 * Do any formatting and such in run()
 * Optionally return the status of the command in run()

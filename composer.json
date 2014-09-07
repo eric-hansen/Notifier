@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EricHansen\\SystemNotifier\\": "src/EricHansen/SystemNotifier/"
+            "EricHansen\\Notifier\\": "src/EricHansen/Notifier/"
         }
     }
 }

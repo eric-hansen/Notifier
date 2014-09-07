@@ -2,7 +2,7 @@
 /**
  * Uncomment if not using Composer's auto-loader:
  *
- * @require_once "src/EricHansen/SystemNotifier/Notifier.php";
+ * @require_once "src/EricHansen/Notifier/Notifier.php";
  */
 
 // Load up the class and initialize it (nothing to do there)
