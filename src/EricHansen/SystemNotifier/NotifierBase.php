@@ -1,6 +1,6 @@
 <?php
 
-namespace SystemNotifier;
+namespace EricHansen\Notifier;
 
 abstract class NotifierBase {
     abstract public function __construct($args);

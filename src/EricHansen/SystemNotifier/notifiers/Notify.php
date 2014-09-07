@@ -2,11 +2,11 @@
 /**
  * This calls notify-send to display a notice for the user.
  */
-namespace SystemNotifier\Notifiers;
+namespace EricHansen\Notifier\Notifiers;
 
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'NotifierBase.php';
 
-class Notify extends \SystemNotifier\NotifierBase {
+class Notify extends \EricHansen\Notifier\NotifierBase {
     /**
      * @param $args Array of arguments passed in via the Notifier::__call().
      */

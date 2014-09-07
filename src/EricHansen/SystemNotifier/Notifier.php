@@ -1,5 +1,5 @@
 <?php
-namespace SystemNotifier;
+namespace EricHansen\Notifier;
 
 class Notifier {
     /**
@@ -24,15 +24,20 @@ class Notifier {
         if(class_exists($notif_class)){
             $notifier = new $notif_class($args);
 
-            $notifier->run();
+            $res = $notifier->run();
 
-            return true;
+            // Return true by default or the status of the run() call if it returns anything
+            return (!is_null($res) ? $res : true);
         }
 
         return false;
     }
 }
 
-$n = new Notifier();
-
-$n->Notify(array("title" => "Test", "msg" => "Yay"));
+/**
+ * Simple example of how to use:
+ *
+ * $n = new Notifier();
+ *
+ * $n->Notify(array("title" => "Test", "msg" => "Yay"));
+ */
