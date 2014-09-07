@@ -1,0 +1,23 @@
+{
+    "name": "eric-hansen/php-notifiers",
+    "type": "library",
+    "description": "System notifier for PHP scripts inteded for CLI on desktops",
+    "keywords": ["notification", "notifications", "cli", "desktop"],
+    "homepage": "https://github.com/eric-hansen/Notifier",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eric Hansen",
+            "email": "hansen.c.eric@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EricHansen\\SystemNotifier\\": "src/EricHansen/SystemNotifier/"
+        }
+    }
+}
